@@ -1,0 +1,12 @@
+// _footer.scss
+@use 'variables';
+.footer {
+  padding: 1rem;
+  background-color: variables.$primary-color;
+  color: variables.$white;
+  text-align: center;
+
+  p {
+    margin: 0.5rem 0;
+  }
+}

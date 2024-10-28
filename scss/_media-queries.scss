@@ -1,0 +1,112 @@
+// _media-queries.scss
+
+@use 'variables';
+@use 'mixins'; 
+
+// Extra small styles - pantallas menores a 576px
+@include mixins.respond-to(xs) {
+  .header__logo {
+    font-size: 1.25rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section__title {
+    font-size: 1.5rem;
+  }
+
+  .slider__img {
+    height: 200px;
+  }
+}
+
+// Small styles - pantallas de 576px o más
+@include mixins.respond-to(sm) {
+  .header__menu-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section__title {
+    font-size: 1.75rem;
+  }
+
+  .slider__img {
+    height: 250px;
+  }
+}
+
+// Medium styles - pantallas de 768px o más
+@include mixins.respond-to(md) {
+  .header__menu-list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .slider__img {
+    height: 300px;
+  }
+}
+
+// Large styles - pantallas de 992px o más
+@include mixins.respond-to(lg) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section__title {
+    font-size: 2.25rem;
+  }
+
+  .slider__img {
+    height: 350px;
+  }
+}
+
+// Extra large styles - pantallas de 1200px o más
+@include mixins.respond-to(xl) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .slider__img {
+    height: 400px;
+  }
+}
+
+// Extra extra large styles - pantallas de 1400px o más
+@include mixins.respond-to(xxl) {
+  .header__logo {
+    font-size: 2rem;
+  }
+
+  .section__title {
+    font-size: 3rem;
+  }
+
+  .cards__text {
+    font-size: 1.125rem;
+  }
+
+  .slider__img {
+    height: 450px;
+  }
+}

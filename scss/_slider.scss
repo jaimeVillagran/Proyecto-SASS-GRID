@@ -1,0 +1,19 @@
+// _slider.scss
+.slider {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+
+  &__slide {
+    display: none;
+
+    &-active {
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

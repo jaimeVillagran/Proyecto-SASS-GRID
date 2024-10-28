@@ -1,0 +1,44 @@
+// _header.scss
+@use 'variables';
+@use 'mixins';
+
+.header {
+  background-color: variables.$primary-color;
+  padding: 1rem;
+
+  &__logo {
+    color: variables.$white;
+    font-size: 1.5rem;
+  }
+
+  &__nav {
+    display: none;
+
+    .header__menu-list {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .header__menu-link {
+      color: variables.$white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  &__menu-toggle {
+    color: variables.$white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @include mixins.respond-to(sm) {
+    &__nav {
+      display: block;
+    }
+
+    &__menu-toggle {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+// _mixins.scss
+@use 'variables';
+@use 'sass:map';
+
+// Media Queries
+@mixin respond-to($breakpoint) {
+  @media (min-width: map.get(variables.$breakpoints, $breakpoint)) {
+    @content;
+  }
+}
