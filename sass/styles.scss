@@ -1,0 +1,30 @@
+// styles.scss
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'header';
+@import 'slider';
+@import 'section';
+@import 'cards';
+@import 'footer';
+
+// Media Queries
+@media (min-width: 576px) {
+  // Small
+}
+
+@media (min-width: 768px) {
+  // Medium
+}
+
+@media (min-width: 992px) {
+  // Large
+}
+
+@media (min-width: 1200px) {
+  // Extra large
+}
+
+@media (min-width: 1400px) {
+  // Extra extra large
+}

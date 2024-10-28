@@ -1,0 +1,22 @@
+// _cards.scss
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: $primary-color;
+  color: $white;
+
+  &__item {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darken($primary-color, 20%);
+  }
+
+  &__icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
