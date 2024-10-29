@@ -174,7 +174,7 @@ body {
     height: 400px;
   }
 }
-@media (min-width: ) {
+@media (min-width: 1600px) {
   .header__logo {
     font-size: 2rem;
   }
