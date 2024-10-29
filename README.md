@@ -31,3 +31,16 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más información.
+
+## Ejecución de SASS
+
+Después de descargar el proyecto, asegúrate de ejecutar SASS para compilar los archivos SCSS en un solo archivo CSS.
+
+## Compilar archivos SCSS
+
+Para compilar los archivos SCSS, sigue estos pasos:
+
+1. Asegúrate de tener SASS instalado en tu máquina. Puedes instalarlo usando npm con el comando `npm install -g sass`.
+2. Navega al directorio raíz del proyecto en tu terminal.
+3. Ejecuta el siguiente comando para compilar los archivos SCSS en un solo archivo CSS: `sass scss/main.scss css/styles.css`.
+4. El archivo CSS compilado se generará en el directorio `css` como `styles.css`.
